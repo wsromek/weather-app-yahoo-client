@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function LoadingMask({ loading = null }) {
+function LoadingMask({ loading }) {
   if (!loading) return null;
 
   return (
