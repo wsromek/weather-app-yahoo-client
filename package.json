@@ -8,8 +8,7 @@
     "test": "./node_modules/.bin/jest",
     "dev": "./node_modules/.bin/webpack -d --watch",
     "build": "./node_modules/.bin/webpack -p",
-    "lint": "./node_modules/.bin/eslint src/app/**/*.jsx test/components/**/*.jsx",
-    "quality": "npm run lint && npm run test"
+    "lint": "./node_modules/.bin/eslint src/app/**/*.jsx test/components/**/*.jsx"
   },
   "author": "wojciech.sromek@gmail.com",
   "license": "ISC",
