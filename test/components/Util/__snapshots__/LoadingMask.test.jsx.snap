@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoadingMask component renders correctly 1`] = `
+<div
+  className="loading-overlay"
+>
+  <img
+    alt="loading_indicator"
+    src="/public/images/throbber.gif"
+  />
+</div>
+`;
+
+exports[`LoadingMask component renders correctly 2`] = `null`;

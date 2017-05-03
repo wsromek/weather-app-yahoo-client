@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherApp component renders correctly 1`] = `
+<div>
+  <section
+    className="selection"
+  >
+    <nav
+      className="navbar navbar-default"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="navbar-header"
+        >
+          <span
+            className="navbar-brand"
+          >
+            Weather Forecast
+          </span>
+        </div>
+        <div
+          className="navbar-form navbar-right"
+        >
+          <div
+            className="form-group"
+          >
+            <select
+              className="form-control"
+              id="city-list"
+              name="city-list"
+              onChange={[Function]}
+              placeholder="Choose city"
+              type={undefined}
+            >
+              <option
+                value="0"
+              >
+                Choose city:
+              </option>
+              <option
+                value="35801:Huntsville"
+              >
+                Huntsville
+              </option>
+              <option
+                value="99501:Anchorage"
+              >
+                Anchorage
+              </option>
+            </select>
+          </div>
+          <button
+            className="btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            style={
+              Object {
+                "marginLeft": "5px",
+              }
+            }
+            type="button"
+          >
+            Get forecast
+          </button>
+        </div>
+      </div>
+    </nav>
+  </section>
+</div>
+`;

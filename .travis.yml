@@ -1,0 +1,24 @@
+sudo: false
+
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+
+node_js:
+  - '7'
+
+install:
+  - npm install
+  - npm run lint
+  - npm run build
+
+deploy:
+  provider: heroku
+  skip_cleanup: true
+  app:
+    master: weather-app-yahoo-client
+  api_key:
+    secure: Yk+7sjvhg2bnkXW1iUUd3bw3ky0ynZIo8VldBpP9sVWmdbA0PY/ohRhoy745MP+K0lOfM0ivQgF3sYl+VvG8UB8RKZ6ELAu++rKS4qCGemSo2v93VAN9ZjTebcjgokuKtt9Zq/fwAS8xXz9zpjz3YKOnyjEsiyffeGS5751yKEKsZDaXkC/TFnPsgwwNm5FLmY6LbcPIRssYdQDVX3dRSdU0ZO75jkdlArZ1vYpvVHniwVFX5emggLdsr6sfYlLXA0ZaC0wvGUHNz1MMRPzcCPfAGI/Lvs79Kni/eCj4yXzbspvPaNPvtLj6uphsuFEmZw8YT8V/C5knpS8nR6vL2mW3Fs6vCJBM5up0i8t4f51fPFPz+zsfzbuDLvKvQwiz+NdfphKGuG+c61c0UphLDFcrhxKH8i7g9Xtx4KVnSzDv+aOl+xfpdw1whxYjgQ/Ec3lGSzFXvj0agMxxM8Imm61cJBxkYlxEAxiJ4n2dew8MxjpCv/cqs3W5Flu0RRYXei2AFw7ck6rRrD7L1ynM898ipHHr3vd/dqA4YYVSzfLl1ochIxxbwA+i3woM40SNNF0dT1HxjF1q77OF+1irMcM/ja8j0TAeYRXEmvp3cxkgws49H0UZ6Xl2KPGpV1zIHZvQcWFFotuVTzjzsRrKyFBQscxFKIwTEwmUkLZrqvI=
+
